@@ -1,0 +1,20 @@
+int x, y;
+
+while (true)
+{
+    Console.WriteLine("Insira o valor de x:");
+    x = int.Parse(Console.ReadLine());
+    Console.WriteLine("Insira o valor de y:");
+    y = int.Parse(Console.ReadLine());
+    if (x < y)
+    {
+        Console.WriteLine("Crescente");
+    } else if (x > y) {
+        Console.WriteLine("Decrescente");
+            }
+    else
+    {
+        Console.WriteLine("Os números são iguais!");
+        break;
+    }
+}
