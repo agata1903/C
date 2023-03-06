@@ -1,0 +1,23 @@
+using System.Globalization;
+
+double nota1, nota2, media;
+
+Console.WriteLine("Qual foi a primeira nota?");
+nota1 = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+
+Console.WriteLine("Qual foi a segunda nota?");
+nota2 = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+
+media = (nota1 + nota2) / 2;
+
+if  (media > 6.0)
+{
+    Console.WriteLine("A média final foi " + media.ToString("F1")+ ". O aluno foi aprovado!");
+} else if (media == 6.0)
+{
+    Console.WriteLine("A média final foi " + media.ToString("F1") + ". O aluno está de recuperação!");
+}
+else
+{
+    Console.WriteLine("A média final foi " + media.ToString("F1") + ". O aluno foi reprovado!");
+}
