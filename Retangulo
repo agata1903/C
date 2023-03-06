@@ -1,0 +1,18 @@
+using System;
+using System.Globalization;
+
+double b, h, a, p, d;
+
+Console.WriteLine("Insira a base do retângulo:");
+b = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+Console.WriteLine("Insira a altura do retângulo:");
+h = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+a = b * h;
+p = (b * 2) + (h * 2);
+d = Math.Sqrt(Math.Pow(b,2) + Math.Pow(h,2));
+
+Console.WriteLine("A área do retângulo é igual a " + a, CultureInfo.InvariantCulture);
+Console.WriteLine("O perímetro do retângulo é igual a " + p, CultureInfo.InvariantCulture);
+Console.WriteLine("A diagonal do retângulo é igual a " + d.ToString("F4"), CultureInfo.InvariantCulture);
