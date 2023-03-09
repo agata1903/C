@@ -1,0 +1,15 @@
+using System;
+
+int n, x, soma;
+
+Console.WriteLine("Insira o valor de n:");
+n = int.Parse(Console.ReadLine());
+
+soma = 0;
+for (int i = 1; i <= n; i++)
+{
+    Console.WriteLine("Insira um valor para x:");
+    x = int.Parse(Console.ReadLine());
+    soma = soma + x;
+}
+Console.WriteLine("A soma é igual a " +  soma);
